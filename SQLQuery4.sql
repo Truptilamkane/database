@@ -1,13 +1,13 @@
-create table Employee(id int,name varchar(20),empid int);
-alter table Employee add salary int;
-select * from Employee;
-insert into Employee values(1,'arati',123,1000);
-insert into Employee values(2,'gita',345,7800);
-insert into employee values(3,'hina',765,2000);
+--full outer join
+--left outer join
+--right outer join
 
-select max(salary) from Employee;
-select min(salary) from employee;
-select * from employee order by salary desc;
-select count(empid)as count from Employee;
+select * from employee;
 
-select name from employee where name like 'a%';
+select * from department;
+
+select * from employee emp FULL OUTER JOIN department dep on emp.departmentid=dep.id;
+
+select * from employee emp LEFT OUTER JOIN department dep on emp.departmentid=dep.id;
+
+select * from employee emp RIGHT OUTER JOIN department dep on emp.departmentid=dep.
